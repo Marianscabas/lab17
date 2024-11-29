@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>contacto</h1>
+
+    <main>
+
+        <form action="">
+            <label for="">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <br>
+            <label for="">Correo electronico</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="">Mensje</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+            <button type="submit">Emviar</button>
+        </form>
+
+        <div>
+            <h1>Mi IMAGEN</h1>
+            <img src="OIP.jfif" class="imagenP" alt="">
+            <h1>Validar formulario - registro</h1>
+            <form action="">
+                <label for="">Nombre</label>
+                <input type="text" name="mombre2" id="nombre2">
+                <br>
+                <label for="">Edad</label>
+                <input type="number" name="edad" id="edad">
+                <BR></BR>
+                <button type="submit" onclick="Validar()">Registro</button>
+            </form>
+        </div>
+        <h1>Galeria de imagenes</h1>
+        <div class="galeria">
+            <img src="babi.jfif" onclick="mostrarGrande(this.src)" alt="">
+            <img src="th.jpg"    onclick="mostrarGrande(this.src)" alt="">
+            <img src=" OIP.jpg"  onclick="mostrarGrande(this.src)" alt="">
+            <img src=" OIP.jfif" onclick="mostrarGrande(this.src)" alt="">
+            <img src=" OIP (1).jpg" onclick="mostrarGrande(this.src)"alt="">
+     </div>   
+
+        <img   id="grande" src="babi.jfif" alt="">
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+body{
+    background-color: bisque;
+}
+
+
+
+.imagenP{
+border-radius: 15px;
+border: 5px solid rgb(142, 158, 155);
+width: 290px;
+box-shadow: 5px 5px 15px rgb(109, 109, 114);
+
+}
+#grande{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
+.galeria{
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
