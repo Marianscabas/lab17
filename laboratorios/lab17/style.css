@@ -1,0 +1,85 @@
+body{
+   background-color:#4E31AA ;
+   padding: 50px ;
+   padding-right: 50px;
+   align-items: center;
+   
+}
+header{
+    top: 0;
+    width: 100%;
+    background-color: #3A1078;
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    z-index: 100;
+    border-radius: 4px;
+    text-align: center;
+    color: azure;
+    margin-bottom: 50px;
+}
+.sesion_1{
+background-color: #3795BD;
+padding: 20px;
+box-shadow: 4px 4px 8px rgba(2, 2, 2, 0.3);
+border-radius: 2px;
+margin-top: 20px;
+color: rgb(218, 191, 191);
+width: 500px;
+
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #E91E63;
+	background: rgba(#E91E63, .2);
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #E91E63;
+}
+button{
+    background-color: #3A1078;
+    color: azure;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #4E31AA;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #4E31AA;
+}
+
+h2{
+    color: #4E31AA;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #4E31AA;
+    width: 300px;
+
+}
+
+
+footer{
+background-color: #3A1078;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    border: radius 2px; ;
+    
+}
+

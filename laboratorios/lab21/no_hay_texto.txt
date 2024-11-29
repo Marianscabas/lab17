@@ -1,0 +1,3 @@
+with open('prac1.txt','r') as archivo:
+with open('prac1.txt','r') as archivo:with open('prac1.txt','r') as archivo:
+v
