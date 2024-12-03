@@ -1,0 +1,110 @@
+use base1 ;
+
+db.libros.insertOne(
+    {
+        _id: 1,
+        nombre : "el aleph",
+        autor  : "borges",
+        editoriales : [`planeta , siglo`],
+        precio: 20,
+        cantidad:30
+    }
+);
+
+db.libros.insertOne(
+    {
+        _id: 2,
+        nombre : "el mañana",
+        autor  : "lucia",
+        editoriales : [`planeta , siglo`],
+        precio: 50,
+        cantidad:20
+    }
+);
+
+db.libros.insertMany([
+    {
+        _id: 3,
+        nombre : "el mañana",
+        autor  : "lucia",
+        editoriales : [`Planeta , siglo`],
+        precio: 10,
+        cantidad:10
+    },
+    {
+         _id:4 ,
+        nombre : "el pasado",
+        autor  : "luz",
+        editoriales : [`siglo21`],
+        precio: 70,
+        cantidad:40
+
+        
+    },
+    {
+         _id:5,
+        nombre : "el manaa",
+        autor  : "lucias",
+        editoriales : [`planeta , siglo`],
+        precio: 50,
+        cantidad:15
+    }
+]);
+//db.libros.update({nombre : "el manaa"},{$set:{precio:100}})
+
+//db.libros.find({_id:5});
+//db.libros.find({precio : 50 }) 
+//db.libros.find({precio : 50, cantidad : 20 })
+//db.libros.find({ precio: { $gt:40 }})
+//db.libros.find( { cantidad: { $gte : 50 }})
+//db.libros.find( { cantidad: { $ne : 50 }})
+//db.libros.updateMany({}, {$inc:{cantidad:5}})
+//db.libros.find()
+//db.libros.find( { editoriales: { $in : [`Planeta`]  })
+
+
+//db.libros.find({ precio: { $gte:40 , $lte:20}})
+
+
+use base2;
+db.libros.insertMany([
+    {
+        _id: 1,
+        nombre: 'MULTIFUNCION HP DESKJET 2675',
+        rubro: 'impresora',
+        precio: 3000,
+        stock: 20
+    },
+    {
+        _id: 2,
+        nombre: 'MULTIFUNCION EPSON EXPRESSION XP241',
+        rubro: 'impresora',
+        precio: 3700, stock: 5
+
+        
+    },
+    {
+        _id: 3,
+        nombre: 'LED 19 PHILIPS', 
+        rubro: 'monitor', precio: 4500, 
+        stock: 2
+
+    },{
+       _id: 4,
+        nombre: 'LED 22 PHILIPS',
+        rubro: 'monitor',
+        precio: 5700,
+        stock: 4
+    }
+    ]);
+// Imprimir todos los documentos de la colección 'articulos'.
+//db.libros.find()
+
+//Imprimir todos los documentos de la colección 'articulos' que no son impresoras.
+//db.libros.find( { rubro: { $ne : 'impresora' }})
+
+//Imprimir todos los artículos que pertenecen al rubro de 'mouse'.
+//db.libros.find( { rubro: { $nin : ['mouse'] }} )
+
+//Imprimir todos los artículos con un precio mayor o igual a 5000.
+//db.libros.find({ precio: { $gte:5000 }})
